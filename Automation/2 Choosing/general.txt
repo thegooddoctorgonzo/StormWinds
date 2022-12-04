@@ -1,0 +1,7 @@
+Clean up user VDI profiles
+Snapshot VMs before updates
+Generate reports
+Check cert expirations onweb servers
+Find DOA servers
+Audit User AD objects for complete info
+Scan user laptops for out of date policy

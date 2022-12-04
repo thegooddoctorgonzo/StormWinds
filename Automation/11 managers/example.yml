@@ -1,0 +1,14 @@
+---
+  - name: Playbook
+    hosts: webservers
+    become: yes
+    become_user: admin
+    tasks:
+      - name: Copy file to C:\Temp
+        ansible.windows.win_copy:
+          src: files\somescript.ps1
+          dest: C:\Temp
+      - name: Run a powershell script
+        ansible.windows.win_shell: C:\Temp\somescript.ps1
+        args:
+          executable: pwsh

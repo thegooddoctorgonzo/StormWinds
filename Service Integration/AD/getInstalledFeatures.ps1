@@ -1,0 +1,1 @@
+get-WindowsFeature  | Where-Object {$_.InstallState -eq "Installed"}

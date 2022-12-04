@@ -1,0 +1,5 @@
+get list of new users
+iterate through list of new users
+if "User does not exist"
+    then "create the user and make a home directory"
+else "exit this loop and enter the next"

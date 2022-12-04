@@ -1,0 +1,5 @@
+.ps1 - Script files seperated into 1 function per file
+
+.psd - Module file that contains info about the module and what functions and variables are included
+
+.psm - Module file containing at least 1 function OR a list of script files dot-sourced

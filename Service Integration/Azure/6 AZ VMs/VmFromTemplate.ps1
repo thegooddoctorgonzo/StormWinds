@@ -1,0 +1,1 @@
+New-AzResourceGroupDeployment  -ResourceGroupName SW1 -TemplateFile .\Templates\vm-template.json -TemplateParameterFile .\Templates\vm-params.json -adminUsername azroot -adminPassword (ConvertTo-SecureString -AsPlainText -String "123qwe!@#QWE")
