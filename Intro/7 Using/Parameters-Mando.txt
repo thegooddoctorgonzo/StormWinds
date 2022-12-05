@@ -1,0 +1,3 @@
+https://github.com/thegooddoctorgonzo/Everything-UntilSorted/blob/main/Modules-ThirdParty/VMware.Hv.Helper.psm1
+
+Get-Item Function:\Get-DnsClient | select *
