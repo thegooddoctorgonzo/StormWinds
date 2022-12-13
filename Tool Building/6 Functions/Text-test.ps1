@@ -10,5 +10,5 @@ function Text-test {
     $varOne.gettype()
 }
 
-#values can be assigned in multiple ways, but avoid complication. Dont set values of parameters in the param section. 
-#Leave then unassigned and assign using logic in the "BEGIN" section of the function
+#values can be assigned in multiple ways, but avoid complication. Dont set values of parameters in the param section using cmdlets. 
+#Leave them unassigned and assign later using logic in the "BEGIN" section of the function
