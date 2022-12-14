@@ -1,1 +1,6 @@
 Servers without internet connection that use OCSP will not be able to validate certs in modules with out config
+
+winrm quickconfig
+winrm enumerate winrm/config/listener
+Get-Item WSMan:\localhost\Client\TrustedHosts
+Set-Item -Path WSMan:\localhost\Client\TrustedHosts -Value 20.25.88.140

@@ -4,5 +4,14 @@
 }
 catch [System.Management.Automation.ItemNotFoundException]
 {
-    Write-Host "Divide by zero exception"
+    Write-Host "Item not found exception"
+}
+
+try
+{
+    Resolve-DnsName -Name sdfsfsdfs.com -ErrorAction Stop
+}
+catch 
+{
+    Write-Host "DNS name not found exception"
 }
