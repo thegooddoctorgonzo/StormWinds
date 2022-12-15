@@ -1,0 +1,9 @@
+Get-ADUser -Identity azuser
+
+Get-ADUser -Filter 'property -comparison “string”'
+
+Get-ADUser -Filter 'samaccountname -like "*azu*"'
+
+Get-ADUser -Filter 'samaccountname -like "*azu*"' -Properties *
+
+Get-ADUser -Filter 'samaccountname -like "*azu*"' -Properties * | Select-Object -Property DistinguishedName,PasswordLastSet

@@ -1,0 +1,1 @@
+Remove-AzVM -ResourceGroupName "SW1" -Name "SWVM1"
