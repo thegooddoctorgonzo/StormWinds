@@ -1,0 +1,3 @@
+On domain, use the RSAT script to install needed tools or run from domain controller OR from server with Admin roles installed
+
+On home system, set up a windows server in Azure, add domain controller rols and admin features
