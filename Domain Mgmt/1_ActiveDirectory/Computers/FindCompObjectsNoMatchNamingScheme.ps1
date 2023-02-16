@@ -1,0 +1,1 @@
+$comps = Get-ADComputer -Filter * -SearchBase "OU=PEO Aviation Users,DC=Ad,DC=PEOAVN,DC=Army,DC=mil" -Properties * | Where-Object {($_.Name -notlike "?-???????" -and $_.Name -notlike "??-???????" ) -and $_.DistinguishedName -notlike "*Virtual*"}
