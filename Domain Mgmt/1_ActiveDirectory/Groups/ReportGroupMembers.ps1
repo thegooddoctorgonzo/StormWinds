@@ -1,3 +1,3 @@
-$targetGroup = Get-ADGroup -Identity "ProfileUnity-Default"
+$targetGroup = Get-ADGroup -Identity "RemoteUsers"
 
 $users = Get-ADGroupMember -Identity $targetGroup | Get-ADUser
