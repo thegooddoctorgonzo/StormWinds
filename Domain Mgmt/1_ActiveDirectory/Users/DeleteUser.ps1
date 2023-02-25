@@ -1,1 +1,1 @@
-Remove-ADUsers -Filter 'SAMaccountName -eq "smithr"'
+Remove-ADUser -Identity smithr -Confirm:$false

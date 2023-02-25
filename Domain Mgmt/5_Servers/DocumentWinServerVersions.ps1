@@ -1,6 +1,6 @@
 $servers = "DNS1","DHCP1",".","127.0.0.1"
 
-#create the new object
+#create a new custom object
 $objTemplateObject = New-Object -TypeName psobject
 
 $objTemplateObject | Add-Member -MemberType NoteProperty -Name Server -Value $null
@@ -10,7 +10,7 @@ $OSList = New-Object System.Collections.ArrayList
 
 foreach($server in $servers)
 {
-    #instantiate 1 of those objects
+    #instantiate 1 of those custom objects
     $objTemp = $objTemplateObject | Select-Object *
 
     #add values to the properties
