@@ -1,0 +1,1 @@
+Get-ADReplicationSubnet -Filter * | Select-Object -Property Name,Site
