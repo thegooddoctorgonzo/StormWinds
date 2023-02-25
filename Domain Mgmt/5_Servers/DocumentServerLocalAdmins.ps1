@@ -6,7 +6,7 @@ $objTemplateObject = New-Object -TypeName psobject
 $objTemplateObject | Add-Member -MemberType NoteProperty -Name Server -Value $null
 $objTemplateObject | Add-Member -MemberType NoteProperty -Name Admins -Value $null
 
-$OSList = New-Object System.Collections.ArrayList
+$adminList = New-Object System.Collections.ArrayList
 
 foreach($server in $servers)
 {
@@ -17,8 +17,8 @@ foreach($server in $servers)
     $objTemp.Server = $server
 
     try{
-    Invoke-Command -ComputerName $server -ScriptBlock {Get-ComputerInfo -Property WindowsProductName} -OutVariable OSver -EnableNetworkAccess -ErrorAction Stop | Out-Null
-    $objTemp.Admins = $OSver | Select-Object -ExpandProperty WindowsProductName
+    Invoke-Command -ComputerName $server -ScriptBlock {Get-LocalGroupMember -Group Administrators} -OutVariable remoteAdmins -EnableNetworkAccess -ErrorAction Stop | Out-Null
+    $objTemp.Admins = $remoteAdmins | Select-Object -ExpandProperty Name
     }
     catch{
         $objTemp.Admins = "UNREACHABLE"
@@ -26,5 +26,5 @@ foreach($server in $servers)
 
 
     #add the object to an array
-    $OSList.Add($objTemp) | Out-Null
+    $adminList.Add($objTemp) | Out-Null
 }
