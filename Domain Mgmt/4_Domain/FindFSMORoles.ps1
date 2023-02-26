@@ -1,0 +1,1 @@
+Get-ADDomainController -Filter * | foreach{Write-Host "$($_.name) - $($_.OperationMasterRoles)"}

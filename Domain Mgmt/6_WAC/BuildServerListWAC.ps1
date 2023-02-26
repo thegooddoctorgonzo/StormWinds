@@ -1,0 +1,1 @@
+Get-ADComputer -Filter 'operatingSystem -like "*Windows Server*"' | Select-Object -ExpandProperty Name | Out-File -FilePath c:\temp\WAClist.txt

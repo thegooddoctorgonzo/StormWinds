@@ -28,3 +28,5 @@ foreach($server in $servers)
     #add the object to an array
     $OSList.Add($objTemp) | Out-Null
 }
+
+$OSList

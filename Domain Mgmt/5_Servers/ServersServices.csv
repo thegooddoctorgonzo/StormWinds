@@ -1,5 +1,6 @@
-﻿Server,Service
+﻿Server,WINRM
 Web1,w3svc
 Web2,w3svc
 DNS1,DNS
 DHCP1,DHCP
+localhost,WINRM
