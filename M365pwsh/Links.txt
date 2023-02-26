@@ -1,0 +1,4 @@
+# Graph API Filtering
+https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.users/get-mguser
+https://learn.microsoft.com/en-us/graph/filter-query-parameter
+
