@@ -1,0 +1,1 @@
+Remove-MgUser -UserId $user.Id

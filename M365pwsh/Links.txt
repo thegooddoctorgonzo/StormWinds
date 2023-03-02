@@ -2,3 +2,6 @@
 https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.users/get-mguser
 https://learn.microsoft.com/en-us/graph/filter-query-parameter
 
+# MS Graph permissions delegation
+https://learn.microsoft.com/en-us/powershell/microsoftgraph/find-mg-graph-permission?view=graph-powershell-1.0
+

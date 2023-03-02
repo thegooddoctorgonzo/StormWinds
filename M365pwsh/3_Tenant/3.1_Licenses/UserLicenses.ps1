@@ -1,0 +1,1 @@
+Get-MgUserLicenseDetail -UserId $user.Id
