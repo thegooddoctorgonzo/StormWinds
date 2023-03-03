@@ -1,4 +1,4 @@
-$user = Get-MgUser -Filter "DisplayName eq 'Bob Smith'"
+$user = Get-MgUser -Filter "DisplayName eq 'Rob Smith'"
 
 $OBE_Sku = Get-MgSubscribedSku -All | Where-Object SkuPartNumber -eq 'O365_BUSINESS_ESSENTIALS'
 

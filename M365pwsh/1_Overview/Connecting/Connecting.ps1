@@ -14,4 +14,6 @@ Connect-MsolService
 # newest modules
 Install-Module Microsoft.Graph -Scope AllUsers
 
-Connect-MgGraph -Scopes "User.ReadWrite.All","Group.ReadWrite.All", "Application.ReadWrite.All","Organization.ReadWrite.All"
+Import-Module -Name Microsoft.Graph
+
+Connect-MgGraph -Scopes "User.ReadWrite.All","Group.ReadWrite.All", "Application.ReadWrite.All","Organization.ReadWrite.All","MailboxSettings.ReadWrite","Mail.Send.Shared"
