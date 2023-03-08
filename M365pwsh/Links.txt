@@ -8,3 +8,9 @@ https://learn.microsoft.com/en-us/graph/filter-query-parameter
 # MS Graph permissions delegation
 https://learn.microsoft.com/en-us/powershell/microsoftgraph/find-mg-graph-permission?view=graph-powershell-1.0
 
+# Graph group types and props
+https://learn.microsoft.com/en-US/microsoft-365/admin/create-groups/compare-groups
+
+# The problem with New-MgGroup
+https://github.com/microsoftgraph/msgraph-sdk-powershell/issues/748
+
