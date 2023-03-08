@@ -17,4 +17,4 @@ Install-Module Microsoft.Graph -Scope AllUsers
 -- Dont import the modules --
 #Import-Module -Name Microsoft.Graph
 
-Connect-MgGraph -Scopes "User.ReadWrite.All","Group.ReadWrite.All", "Application.ReadWrite.All","Organization.ReadWrite.All","MailboxSettings.ReadWrite","Mail.Send.Shared","TeamSettings.ReadWrite.All"
+Connect-MgGraph -Scopes "User.ReadWrite.All","Group.ReadWrite.All", "Application.ReadWrite.All","Organization.ReadWrite.All","MailboxSettings.ReadWrite","Mail.Send.Shared","Mail.ReadWrite.Shared","TeamSettings.ReadWrite.All","Files.ReadWrite.All","ReportSettings.ReadWrite.All","Reports.Read.All"
