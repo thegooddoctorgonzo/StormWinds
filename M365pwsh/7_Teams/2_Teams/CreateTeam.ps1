@@ -1,7 +1,20 @@
+ # show a list of available templates
+ Get-CsTeamTemplateList
+
 $params = @{
-	"Template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('educationClass')"
+	
+	"Template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('com.microsoft.teams.template.OnboardEmployees')"
+	DisplayName = "NewEmployees"
+	Description = "Fresh Fish"
+
+}
+New-MgTeam -BodyParameter $params
+
+$params = @{
+	
+	"Template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('com.microsoft.teams.template.OrganizeHelpDesk)"
 	DisplayName = "HelpDesk"
-	Description = "Tier 1 Help Desk"
+	Description = "Working Tickets"
 
 }
 New-MgTeam -BodyParameter $params

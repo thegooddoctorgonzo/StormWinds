@@ -25,3 +25,9 @@ https://www.powershellgallery.com/packages/MicrosoftTeams/5.0.0
 
 # Limitations and known issues with MS Graph
 https://learn.microsoft.com/en-us/graph/known-issues
+
+# Team Templates
+https://admin.teams.microsoft.com/teams/templates
+https://learn.microsoft.com/en-us/microsoftteams/get-started-with-teams-templates-in-the-admin-console
+
+
