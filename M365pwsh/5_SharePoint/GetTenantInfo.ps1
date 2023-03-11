@@ -1,0 +1,1 @@
+Get-SPOTenant | Select-Object -Property PublicCdnAllowedFileTypes,OneDriveForGuestsEnabled,SharingCapability,PreventExternalUsersFromResharing | Format-List

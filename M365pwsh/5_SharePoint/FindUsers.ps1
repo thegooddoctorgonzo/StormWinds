@@ -1,0 +1,1 @@
+Get-SPOUser -Site $site

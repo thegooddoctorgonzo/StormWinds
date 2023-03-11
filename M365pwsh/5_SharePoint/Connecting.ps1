@@ -1,5 +1,7 @@
 #start SPOnline Management console
 Connect-SPOService -Url https://landrypwshtraining-admin.sharepoint.com/
 
-Get-SPOUser -Site (Get-SPOSite)[0]
+$site = Get-SPOSite -Filter 'Url -eq "https://landrypwshtraining.sharepoint.com/"'
+
+Get-SPOUser -Site $site
 
