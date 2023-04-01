@@ -1,0 +1,1 @@
+Get-WindowsFeature -Name RSAT-AD-Tools,RSAT-DNS-Server,GPMC |Install-WindowsFeature -IncludeAllSubFeature

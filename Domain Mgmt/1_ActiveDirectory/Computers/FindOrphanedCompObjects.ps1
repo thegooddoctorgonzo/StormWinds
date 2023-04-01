@@ -1,9 +1,9 @@
 $oldComps = New-Object system.collections.arraylist
-$comps = Get-ADComputer -SearchBase "CN=Computers,DOMAIN" -Filter '*' -Properties name, distinguishedname, lastlogontimestamp  | Sort-Object distinguishedName
+$comps = Get-ADComputer -SearchBase "DC=zoneb,DC=com" -Filter '*' -Properties name, distinguishedname, lastlogontimestamp  | Sort-Object distinguishedName
 
 foreach($comp in $comps)
 {
-    if(((Get-Date($comp.lastLogonTimestamp)).AddYears(1600) -lt (Get-date).AddDays(-90)) -or $null -eq $comp.lastLogonTimestamp)
+    if(((Get-Date($comp.lastLogonTimestamp)).AddYears(1600) -lt (Get-date).AddDays(90)))
     {
         $oldComps.add($comp) | Out-Null
     }

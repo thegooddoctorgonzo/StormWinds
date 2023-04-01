@@ -1,1 +1,0 @@
-$comps = Get-ADComputer -Filter * -SearchBase "DOMAIN" -Properties * | Where-Object {($_.Name -notlike "?-???????") -and $_.DistinguishedName -notlike "*Virtual*"}

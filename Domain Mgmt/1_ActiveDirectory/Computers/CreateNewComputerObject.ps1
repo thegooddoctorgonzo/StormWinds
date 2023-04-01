@@ -1,0 +1,1 @@
+New-ADComputer -Name computer1 -SAMAccountName computer1
