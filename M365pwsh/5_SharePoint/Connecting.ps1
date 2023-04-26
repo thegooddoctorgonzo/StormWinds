@@ -1,3 +1,6 @@
+https://www.microsoft.com/en-us/download/details.aspx?id=35588
+
+
 #start SPOnline Management console
 Connect-SPOService -Url https://landrypwshtraining-admin.sharepoint.com/
 

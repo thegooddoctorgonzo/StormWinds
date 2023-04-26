@@ -6,6 +6,9 @@
 #Get DCs
 $DCs = Get-ADComputer -SearchBase "OU=Domain Controllers,DC=zoneb,DC=com" -Filter *
 
+#ALTERNATE
+# Get-ADDomainController
+
 #list of log folders
 $folders = new-object system.collections.arraylist
 

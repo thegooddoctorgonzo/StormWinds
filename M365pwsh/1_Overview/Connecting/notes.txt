@@ -1,4 +1,5 @@
-Each sub-module requires delegated permission from the user session connecting to read data or make changes. When connecting, you have to specify the permissions allowed.Find-MgGraphPermission 
+Each sub-module requires delegated permission from the user session connecting to read data or make changes. 
+When connecting, you have to specify the permissions allowed.Find-MgGraphPermission 
 
 Find-MgGraphPermission user
 Find-MgGraphPermission organization
