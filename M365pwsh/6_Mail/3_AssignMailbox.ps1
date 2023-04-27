@@ -1,4 +1,6 @@
-$user = Get-MgUser -all | Where-Object {$_.DisplayName -eq "Bob Smith"}
+# doesnt work - cant assign just an app, only a sku license
+
+<#$user = Get-MgUser -all | Where-Object {$_.DisplayName -eq "Bob Smith"}
 
 $skus = Get-MgSubscribedSku -All
 
@@ -11,4 +13,4 @@ $ExSku = $skus.ServicePlans | Where-Object {$_.ServicePlanName -like "*EXCHANGE*
 # neither of these work
 Set-MgUserLicense -UserId $user.Id -AddLicenses @{SkuId = $ExSku.ServicePlanId} -RemoveLicenses @()
 
-Update-MgUserLicenseDetail -UserId $user.id -LicenseDetailsId $ExSku.ServicePlanId
+Update-MgUserLicenseDetail -UserId $user.id -LicenseDetailsId $ExSku.ServicePlanId#>
