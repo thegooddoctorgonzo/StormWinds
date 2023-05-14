@@ -1,6 +1,8 @@
  # show a list of available templates
  Get-CsTeamTemplateList
 
+ New-Team -DisplayName TestTeam -Description
+
 $params = @{
 	
 	"Template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('com.microsoft.teams.template.OnboardEmployees')"

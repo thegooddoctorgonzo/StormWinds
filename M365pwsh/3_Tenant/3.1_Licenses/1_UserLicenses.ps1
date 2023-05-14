@@ -1,1 +1,2 @@
-Get-MgUserLicenseDetail -UserId $user.Id
+Get-MgUserLicenseDetail -UserId $steve.Id
+

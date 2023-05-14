@@ -3,6 +3,7 @@
 #graph
 Install-Module Microsoft.Graph -Scope AllUsers
 #SharePoint Online Management Shell
+# Installs a separate application that can be run from its dedicated POSH console or imported into a current session
 https://www.microsoft.com/en-us/download/details.aspx?id=35588
 #exchange
 Install-Module ExchangeOnlineManagement -Scope AllUsers
