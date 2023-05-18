@@ -1,0 +1,8 @@
+Add some explanation on MSGraph
+
+MSGraph is an API for development. The powershell modules, cmdlets, parameters, and docs are built automatically. 
+There are some features that aren't available yet - and some cmdlets are buggy.
+
+You do not need to import the individual MSGraph modules for each sub module
+
+Graph overview in links.txt

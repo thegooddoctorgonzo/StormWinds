@@ -1,0 +1,45 @@
+###### Graph overview ##############
+https://learn.microsoft.com/en-us/graph/overview
+
+
+##### MODULES AND INSTALLERS######
+
+# Exchange Online PowerShell module
+https://learn.microsoft.com/en-us/powershell/exchange/exchange-online-powershell-v2
+
+# SharePoint Online Management Shell
+https://www.microsoft.com/en-us/download/confirmation.aspx
+
+# Teams PowerShell Module
+https://www.powershellgallery.com/packages/MicrosoftTeams/5.0.0
+
+# AzureAD module
+https://learn.microsoft.com/en-us/powershell/azure/active-directory/install-adv2
+
+# MSOnline module
+https://learn.microsoft.com/en-us/powershell/azure/active-directory/install-msonlinev1
+
+
+#### OTHER ######
+
+# Graph API Filtering
+https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.users/get-mguser
+https://learn.microsoft.com/en-us/graph/filter-query-parameter
+
+# MS Graph permissions delegation
+https://learn.microsoft.com/en-us/powershell/microsoftgraph/find-mg-graph-permission?view=graph-powershell-1.0
+
+# Graph group types and props
+https://learn.microsoft.com/en-US/microsoft-365/admin/create-groups/compare-groups
+
+# The problem with New-MgGroup
+https://github.com/microsoftgraph/msgraph-sdk-powershell/issues/748
+
+# Limitations and known issues with MS Graph
+https://learn.microsoft.com/en-us/graph/known-issues
+
+# Team Templates
+https://admin.teams.microsoft.com/teams/templates
+https://learn.microsoft.com/en-us/microsoftteams/get-started-with-teams-templates-in-the-admin-console
+
+
