@@ -1,4 +1,5 @@
-$servers = "DNS1","DHCP1",".","127.0.0.1"
+# run on WAC
+$servers = "dc-alpha","dc-bravo","WAC"
 
 #create the new object
 $objTemplateObject = New-Object -TypeName psobject
@@ -16,14 +17,15 @@ foreach($server in $servers)
     #add values to the properties
     $objTemp.Server = $server
 
-    try{
-    Invoke-Command -ComputerName $server -ScriptBlock {Get-LocalGroupMember -Group Administrators} -OutVariable remoteAdmins -EnableNetworkAccess -ErrorAction Stop | Out-Null
-    $objTemp.Admins = $remoteAdmins | Select-Object -ExpandProperty Name
+    if(Test-Connection -ComputerName $server -Count 1 -Quiet)
+    {
+        Invoke-Command -ComputerName $server -ScriptBlock {Get-LocalGroupMember -Group Administrators} -OutVariable remoteAdmins -EnableNetworkAccess | Out-Null
+        $objTemp.Admins = $remoteAdmins | Select-Object -ExpandProperty Name
     }
-    catch{
+    else
+    {
         $objTemp.Admins = "UNREACHABLE"
     }
-
 
     #add the object to an array
     $adminList.Add($objTemp) | Out-Null
