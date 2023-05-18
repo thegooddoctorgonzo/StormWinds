@@ -17,7 +17,7 @@ Install-Module -name MicrosoftTeams
 #import modules in 5 and 7
 
 #graph
-Import-Module Microsoft.Graph -Scope AllUsers
+Import-Module Microsoft.Graph -Scope Global
 #SharePoint Online Management Shell
 Import-Module Microsoft.Online.SharePoint.PowerShell
 #exchange

@@ -1,3 +1,5 @@
+#count the type and number of licensing applied
+
 $users = Get-MgUser -All
 $userLic = New-Object System.Collections.ArrayList
 

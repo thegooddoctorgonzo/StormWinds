@@ -1,3 +1,5 @@
+# find a user that does not have licensing applied
+
 $user = Get-MgUser -Filter "DisplayName eq 'Steven Landry'"
 
 $OBE_Sku = Get-MgSubscribedSku -All | Where-Object SkuPartNumber -eq 'O365_BUSINESS_ESSENTIALS'
