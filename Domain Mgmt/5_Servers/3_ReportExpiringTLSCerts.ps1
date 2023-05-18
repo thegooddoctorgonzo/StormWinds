@@ -21,6 +21,8 @@ foreach($server in $servers){
     }
 }
 
+
+<#
 #Generate html for email body
 $file = "C:\temp\body.html"
 New-Item -Path $file -ItemType File -Force
@@ -43,7 +45,8 @@ if($expiringCertificates){
     $body = [System.IO.File]::ReadAllText($file)
     $subject = "Expiring Certificates!!"
     $to = ""
-    Send-MailMessage -Body $body -Subject $subject -From "l" -To $to -SmtpServer SMTP1 -Port 25 -BodyAsHtml
+    Send-MailMessage -Body $body -Subject $subject -From "l" -To $to -SmtpServer "SMTPSERVER" -Port 25 -BodyAsHtml
 }
 
 Remove-Item -Path $file -Force -ErrorAction SilentlyContinue
+#>

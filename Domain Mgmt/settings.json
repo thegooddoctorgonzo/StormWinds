@@ -1,0 +1,43 @@
+{
+    "security.workspace.trust.untrustedFiles": "open",
+    "powershell.powerShellDefaultVersion": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+        "source": "PowerShell"
+        }
+    },
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 10000,
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.colorCustomizations": {
+        "tab.activeBackground": "#5aa2e6",
+        "tab.activeForeground": "#fcfafa",
+        "tab.inactiveForeground": "#fcfafa",
+        "tab.activeBorder": "#ffffff"
+    },
+    "workbench.editor.enablePreview": false,
+    "bracket-pair-colorizer-2.depreciation-notice": false,
+    "problems.decorations.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "workbench.editor.wrapTabs": true,
+    "diffEditor.renderSideBySide": false,
+    "workbench.sideBar.location": "right",
+    "vsicons.dontShowNewVersionMessage": true,
+    "explorer.confirmDragAndDrop": false,
+    "editor.inlineSuggest.enabled": false,
+    "editor.suggest.showIssues": false,
+    "editor.inlayHints.enabled": "off",
+    "editor.quickSuggestions": {
+        "other": "inline",
+        "comments": "inline",
+        "strings": "inline"
+    },
+    "workbench.editor.untitled.hint": "hidden",
+    "powershell.promptToUpdatePowerShell": false,
+    "powershell.pester.codeLens": false,
+    "editor.tabCompletion": "on",
+    "files.defaultLanguage": "Powershell",
+    "explorer.confirmDelete": false,
+    "workbench.startupEditor": "none"
+}

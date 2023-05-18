@@ -4,7 +4,7 @@
 #Deletes files older than 7 days
 
 $date = (Get-date).addDays(-7)
-$files = Get-ChildItem -Path '\\SMTP1\c$\inetpub\mailroot\badmail\' | Where-Object {$_.LastWriteTime -lt $date}
+$files = Get-ChildItem -Path 'c:\inetpub\mailroot\badmail\' | Where-Object {$_.LastWriteTime -lt $date}
 
-$files | Remove-Item -Confirm:$false -ErrorAction SilentlyContinue -InformationAction SilentlyContinue -WarningAction SilentlyContinue
+$files | Remove-Item -Confirm:$false -ErrorAction SilentlyContinue -InformationAction SilentlyContinue -WarningAction SilentlyContinue -Verbose
 
