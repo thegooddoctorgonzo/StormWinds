@@ -21,7 +21,7 @@ Import-Module Microsoft.Graph -Scope Global
 #SharePoint Online Management Shell
 Import-Module Microsoft.Online.SharePoint.PowerShell
 #exchange
-Import-Module ExchangeOnlineManagement -Scope AllUsers
+Import-Module ExchangeOnlineManagement -Scope Global
 #azureAD
 Import-Module  AzureAD 
 # MSOnline
